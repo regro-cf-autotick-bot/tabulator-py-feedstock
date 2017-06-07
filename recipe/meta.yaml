@@ -4,7 +4,7 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "053ccf394dd987a13cd6f9e274e177fa87cb7cc68b0e6f84206a75ad6a48d5c2" %}
-{% set build = 0 %}
+{% set build = 1 %}
 
 package:
   name: {{ conda_name }}
@@ -40,7 +40,7 @@ requirements:
     - linear-tsv >=1.0,<2.0
     - xlrd >=1.0,<2.0
     - openpyxl >=2.4,<3.0
-    # - datapackage-py <1.0
+    - datapackage-py <1.0
     - ezodf >=0.3,<2.0
     - lxml >=3.0,<4.0
 
