@@ -1,9 +1,9 @@
 {% set conda_name = "tabulator-py" %}
 {% set name = "tabulator" %}
-{% set version = "1.0.0a5" %}
+{% set version = "1.14.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "053ccf394dd987a13cd6f9e274e177fa87cb7cc68b0e6f84206a75ad6a48d5c2" %}
+{% set hash = "f3e30e35c062b0f5169076a9207532a40a70bfffce842dc403664b309be9cbf5" %}
 {% set build = 1 %}
 
 package:
@@ -18,7 +18,7 @@ build:
   entry_points:
     - tabulator = tabulator.cli:cli
 
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 
