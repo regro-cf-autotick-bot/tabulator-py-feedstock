@@ -4,7 +4,7 @@
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "f3e30e35c062b0f5169076a9207532a40a70bfffce842dc403664b309be9cbf5" %}
-{% set build = 1 %}
+{% set build = 2 %}
 
 package:
   name: {{ conda_name }}
@@ -15,15 +15,17 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 build:
+  noarch: python
   entry_points:
     - tabulator = tabulator.cli:cli
 
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: python -m pip install --no-deps --ignore-installed .
 
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
 
