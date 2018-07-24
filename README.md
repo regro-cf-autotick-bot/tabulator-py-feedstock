@@ -14,14 +14,15 @@ Summary: Consistent interface for stream reading and writing tabular data (csv/x
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tabulator-py-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tabulator-py-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/tabulator-py-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tabulator-py-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tabulator-py-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tabulator-py-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/tabulator-py-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/tabulator-py-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tabulator-py/badges/version.svg)](https://anaconda.org/conda-forge/tabulator-py)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/tabulator-py/badges/downloads.svg)](https://anaconda.org/conda-forge/tabulator-py)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-tabulator--py-green.svg)](https://anaconda.org/conda-forge/tabulator-py) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/tabulator-py.svg)](https://anaconda.org/conda-forge/tabulator-py) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/tabulator-py.svg)](https://anaconda.org/conda-forge/tabulator-py) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/tabulator-py.svg)](https://anaconda.org/conda-forge/tabulator-py) |
 
 Installing tabulator-py
 =======================
